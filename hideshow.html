@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Zhan Feng - jquery test</title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $("#hide").click(function(){
+                    $(".test").hide();
+                });
+
+                $("#show").click(function(){
+                    $(".test").show();
+                });
+                
+                $("#hide2").click(function(){
+                    $(".test2").hide();
+                });
+
+                $("#show2").click(function(){
+                    $(".test2").show();
+                });
+            });
+        </script>
+        <style type="text/CSS">
+            body {
+                background-color:beige;
+            }
+            .pstyle {
+                background-color:lightblue; 
+                border:thin solid navy;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pstyle">
+            <p class="test">Click "Hide" or "Show" <br/> 
+                to hide me or show me.</p>
+            <button id="hide">Hide</button> 
+            <button id="show">Show</button>
+        </div>
+        
+        <p></p>
+        
+        <div class="pstyle">
+            <p class="test2">Click "Hide" or "Show" <br/>
+                to hide me or show me.<p>
+            <button id="hide2">Hide</button>    
+            <button id="show2">Show</button>
+        </div>
+        
+    </body>
+</html>
